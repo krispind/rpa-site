@@ -1,0 +1,54 @@
+html {
+  font-size: $baseFontSize + px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: $text;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+ul,
+ol {}
+
+li {}
+
+#{$a-tags} { // see variables partial for definitions
+  color: $link;
+  text-decoration: none;
+}
+
+#{$a-tags-hover} {
+  color: $linkHover;
+}
+
+p {}
+
+small {}
+
+strong {}
+
+sup {}
+
+hr {}
+
+// ----------------------------------------------------------
+// special use classes
+// ----------------------------------------------------------
+
+
+
+
+// ----------------------------------------------------------
+// nexa webfonts
+// ----------------------------------------------------------
+

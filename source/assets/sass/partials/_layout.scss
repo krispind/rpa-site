@@ -1,0 +1,13 @@
+// ----------------------------------------------------------
+// layout
+// ----------------------------------------------------------
+
+html{background-color: #fff;}
+
+.container{
+  background:red;
+  @include breakpoint(800px){
+    background:blue;
+    @include span(3 of 12);
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+<!--[if !IE]>--><html lang="en"><!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--[if lte IE 8]>
+      <script type="text/javascript" src="assets/js/ie-polys.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="assets/js/picturefill.min.js"></script>
+  </head>
+  <body>
+
+
+    <header class="site-header">
+      Header here
+    </header>
+
+    <section class="site-grid">
+      <div class="column column-1">Column 1</div>
+      <div class="column column-2">Column 2</div>
+      <div class="column column-3">Column 3</div>
+      <div class="column column-4">Column 4</div>
+      <div class="column column-5">Column 5</div>
+      <div class="column column-6">Column 6</div>
+    </section>
+
+    <footer class="site-footer">
+      Footer here
+    </footer>
+
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.min.js"></script>
+
+  <!-- use during dev for performance monitoring -->
+  <script type="text/javascript" src="assets/js/justice.mapped.min.js"></script>
+  <script type="text/javascript">
+    Justice.init({
+      metrics: {
+        TTFB:             { budget: 200   },
+        domInteractive:   { budget: 250   },
+        domComplete:      { budget: 800   },
+        firstPaint:       { budget: 1000  },
+        pageLoad:         { budget: 2000  },
+        requests:         { budget: 6     },
+      },
+      warnThreshold: 0.8,
+      showFPS: true,
+      chartType: 'spline'
+    });
+  </script>
+  <!-- end performance monitoring -->
+
+
+</html>
