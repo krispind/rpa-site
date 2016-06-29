@@ -5,6 +5,8 @@ html {
   line-height: 1.25;
   color: $text;
   background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   @include breakpoint($tablet) {
     font-size: $baseFontSize * 1.25 + px;
   }
@@ -24,9 +26,15 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 2.5rem;
+  margin: 0 0 .5em;
 }
 
-h3 {}
+h3 {
+  border-bottom: 1px solid;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 1em;
+}
 
 h4 {}
 
@@ -35,9 +43,16 @@ h5 {}
 h6 {}
 
 ul,
-ol {}
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-li {}
+li {
+  margin-bottom: .75rem;
+  font-size: .75rem;
+}
 
 #{$a-tags} { // see variables partial for definitions
   color: $text;
@@ -49,7 +64,9 @@ li {}
   color: $green;
 }
 
-p {}
+p {
+  margin: 1rem 0;
+}
 
 small {}
 
@@ -61,6 +78,17 @@ sup {}
 
 hr {}
 
+::-moz-selection {
+  color: $yellow;
+  background: $magenta;
+}
+
+::selection {
+  color: $yellow;
+  background: $magenta;
+}
+
+
 // ----------------------------------------------------------
 // special use classes
 // ----------------------------------------------------------
@@ -68,7 +96,7 @@ hr {}
 .highlight {
   background-color: $text;
   color: #fff;
-  padding: 0 .2em;
+  padding: 0 .3em .15em;
 }
 
 
