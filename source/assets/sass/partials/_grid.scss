@@ -15,7 +15,7 @@ $susy: (
   global-box-sizing: border-box,
   last-flow: to,
   debug: (
-    image: show,
+    image: hide,
     color: rgba(#66f, .25),
     output: background,
     toggle: top right,
@@ -36,10 +36,6 @@ $susy: (
 // -------------------------------
 
 $mobile                   : 20em; // 320
-$mobile-horizontal        : 30em; // 480
-$em35                     : 35em; // 560
-$em40                     : 40em; // 640
-$em44                     : 44em; // 704
-$tablet                   : 48em; // 768
-$em52                     : 52em; // 832
+$tablet                   : 40em; // 640
 $desktop                  : 60em; // 960
+$widescreen               : 80em; // 1280

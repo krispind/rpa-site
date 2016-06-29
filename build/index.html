@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
-<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
-<!--[if !IE]>--><html lang="en"><!--<![endif]-->
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
-    <title>Page Title</title>
+    <title>Royal Punk Android</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
@@ -13,55 +11,37 @@
 
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!--[if lte IE 8]>
-      <script type="text/javascript" src="assets/js/ie-polys.js"></script>
-    <![endif]-->
-
-    <script type="text/javascript" src="assets/js/picturefill.min.js"></script>
   </head>
   <body>
 
-
-    <header class="site-header">
-      Header here
-    </header>
-
-    <section class="site-grid">
-      <div class="column column-1">Column 1</div>
-      <div class="column column-2">Column 2</div>
-      <div class="column column-3">Column 3</div>
-      <div class="column column-4">Column 4</div>
-      <div class="column column-5">Column 5</div>
-      <div class="column column-6">Column 6</div>
-    </section>
-
-    <footer class="site-footer">
-      Footer here
-    </footer>
-
+    <div class="intro">
+      <div class="intro-top-right"></div>
+      <div class="intro-bottom-right"></div>
+      <div class="panel">
+        <h1>We help bond brands + customers.</h1>
+        <p>At RPA we’re about meaningful, measurable results. We identify our clients' passions and core competencies, and efficiently connect them with their audience.</p>
+        <p>We are true to ourselves and our partners. We help create real brand differentiation, and not just for the sake of being different.</p>
+        <p>We've helped corporate brands. Ad agencies. Media companies. Big. Small. B2B. B2C. If you've got an idea (or want one), we can help.</p>
+        <p><strong>Royal Punk Android. <span class="highlight">Real. Different.</span></strong></p>
+      </div>
+    </div>
 
   </body>
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'vwa5mvp',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
+  <!--
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/script.min.js"></script>
-
-  <!-- use during dev for performance monitoring -->
-  <script type="text/javascript" src="assets/js/justice.mapped.min.js"></script>
-  <script type="text/javascript">
-    Justice.init({
-      metrics: {
-        TTFB:             { budget: 200   },
-        domInteractive:   { budget: 250   },
-        domComplete:      { budget: 800   },
-        firstPaint:       { budget: 1000  },
-        pageLoad:         { budget: 2000  },
-        requests:         { budget: 6     },
-      },
-      warnThreshold: 0.8,
-      showFPS: true,
-      chartType: 'spline'
-    });
-  </script>
-  <!-- end performance monitoring -->
-
+  -->
 
 </html>

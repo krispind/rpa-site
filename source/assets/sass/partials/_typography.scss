@@ -1,13 +1,30 @@
 html {
   font-size: $baseFontSize + px;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "aktiv-grotesk", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.25;
   color: $text;
+  background-color: #fff;
+  @include breakpoint($tablet) {
+    font-size: $baseFontSize * 1.25 + px;
+  }
+  @include breakpoint($desktop) {
+    font-size: $baseFontSize * 1.5 + px;
+  }
 }
 
-h1 {}
+h1 {
+  font-weight: 500;
+  margin: 0 0 .4em;
+  font-size: 3.5rem;
+  letter-spacing: -3px;
+  line-height: 1;
+}
 
-h2 {}
+h2 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
 
 h3 {}
 
@@ -23,19 +40,22 @@ ol {}
 li {}
 
 #{$a-tags} { // see variables partial for definitions
-  color: $link;
+  color: $text;
   text-decoration: none;
+  border-bottom: 1px solid $green;
 }
 
 #{$a-tags-hover} {
-  color: $linkHover;
+  color: $green;
 }
 
 p {}
 
 small {}
 
-strong {}
+strong {
+  font-weight: 500;
+}
 
 sup {}
 
@@ -45,7 +65,11 @@ hr {}
 // special use classes
 // ----------------------------------------------------------
 
-
+.highlight {
+  background-color: $text;
+  color: #fff;
+  padding: 0 .2em;
+}
 
 
 // ----------------------------------------------------------

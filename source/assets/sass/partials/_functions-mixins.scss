@@ -181,7 +181,7 @@ $all-text-inputs: assign-inputs($inputs-list);
 /* lifted and tweaked from https://eager.io/blog/smarter-link-underlines/ */
 /* ============================================================================= */
 
-$selectionColor: $red;
+//$selectionColor: $red;
 
 @mixin textShadowToCropUnderline($underlineColor) {
   text-shadow: .03em 0 $underlineColor, -.03em 0 $underlineColor, 0 .03em $underlineColor, 0 -.03em $underlineColor, .06em 0 $underlineColor, -.06em 0 $underlineColor, .09em 0 $underlineColor, -.09em 0 $underlineColor, .12em 0 $underlineColor, -.12em 0 $underlineColor, .15em 0 $underlineColor, -.15em 0 $underlineColor;

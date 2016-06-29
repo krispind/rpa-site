@@ -2,12 +2,44 @@
 // layout
 // ----------------------------------------------------------
 
-html{background-color: #fff;}
+.panel {
+  background-color: #fff;
+  margin: 0 2rem;
+  max-width: 760px;
+  @include breakpoint($desktop) {
+    margin: 0 auto;
+  }
+}
 
-.container{
-  background:red;
-  @include breakpoint(800px){
-    background:blue;
-    @include span(3 of 12);
+
+// intro section
+
+.intro {
+  background: url('../images/intro-left.png') no-repeat left -80px;
+  padding: 300px 0 80px;
+  position: relative;
+  @include breakpoint($tablet) {
+    padding: 320px 0 100px;
+    background-position: left -50px;
+  }
+  @include breakpoint($desktop) {
+    padding: 370px 0 120px;
+    background-position: left top;
+  }
+}
+
+.intro-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @include breakpoint($tablet) {
+    height: 239px;
+    width: 419px;
+    background: url('../images/intro-top-right.png') no-repeat left top;
+    background-size: cover;
+  }
+  @include breakpoint($desktop) {
+    height: 318px;
+    width: 559px;
   }
 }
