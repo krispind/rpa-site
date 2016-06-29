@@ -110,7 +110,7 @@
     if (c.ajax = f, c.queue = d, c.unsupportedmq = g, c.regex = {
         media: /@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,
         keyframes: /@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,
-        comments: /\/\*[^*]*\*+([^/][^*]*\*+)*\//gi,
+        comments: /\/\*[^*]*\*+([^\/][^*]*\*+)*\//gi,
         urls: /(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,
         findStyles: /@media *([^\{]+)\{([\S\s]+?)$/,
         only: /(only\s+)?([a-zA-Z]+)\s?/,
