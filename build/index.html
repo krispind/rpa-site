@@ -10,7 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="assets/css/style.css" rel="stylesheet">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-80208004-1', 'auto'); //Testing ID
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
 
@@ -80,7 +89,7 @@
         <div class="innerpanel">
           <p class="caption">Check out this quick video on our approach to marketing:</p>
           <div class="video-container">
-            <iframe width="480" height="360" src="https://www.youtube.com/embed/Fc9oD48eSFg?rel=0" frameborder="0" allowfullscreen></iframe>
+            <div id="Fc9oD48eSFg" class="yt-player-autoload"></div>
           </div>
         </div>
       </div>
@@ -118,5 +127,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/script.min.js"></script>
+  <script type="text/javascript" src="//www.youtube.com/player_api"></script>
 
 </html>
