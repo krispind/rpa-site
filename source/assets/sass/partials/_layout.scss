@@ -33,6 +33,15 @@
   overflow: hidden;
 }
 
+.scroll {
+  background: url('../images/scroll-arrows.png') no-repeat left center;
+  text-transform: uppercase;
+  font-size: .7rem;
+  padding: 4px 0 5px 130px;
+  font-weight: 500;
+  margin: 5rem 0;
+}
+
 
 // intro section
 
@@ -117,6 +126,7 @@
   background: url('../images/wwd-right.gif') no-repeat right top;
 }
 
+
 // who we are
 
 .wwa {
@@ -174,6 +184,9 @@
   padding: 40px 0 380px;
   background: url('../images/contact-bottom-left.gif') no-repeat left bottom;
   position: relative;
+  .scroll {
+    margin-top: 0;
+  }
   @include breakpoint($tablet) {
     padding: 60px 0 380px;
   }

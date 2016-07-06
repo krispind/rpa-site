@@ -2,38 +2,38 @@ $(function(){
 
   // should be one function
   var punkSection = $('.punk-section');
-  var bgPosition = punkSection.css('background-position');
-  bgHorPosition = bgPosition.split(' ');
-  updatePage = function() {
-    window.requestAnimationFrame(function() {
-      var scrollTop     = $(window).scrollTop(),
-          elementOffset = $(punkSection).offset().top,
-          distance      = (elementOffset - scrollTop);
-      var scrollAdjust = 0 - distance / 5;
-      punkSection.css({
-        'background-position':bgHorPosition[0]+scrollAdjust+'px'
-      });
-    });
-  };
-  scrollIntervalID = setInterval(updatePage, 10);
+  var punkBgPosition = punkSection.css('background-position');
+  punkBgHorPosition = punkBgPosition.split(' ');
 
   var androidSection = $('.android-section');
-  var bgPosition = androidSection.css('background-position');
-  bgHorPosition = bgPosition.split(' ');
+  var androidBgPosition = androidSection.css('background-position');
+  androidBgHorPosition = androidBgPosition.split(' ');
+
   updatePage = function() {
     window.requestAnimationFrame(function() {
-      var scrollTop     = $(window).scrollTop(),
-          elementOffset = $(androidSection).offset().top,
-          distance      = (elementOffset - scrollTop);
-      var scrollAdjust = 0 - distance / 5;
-      androidSection.css({
-        'background-position':bgHorPosition[0]+scrollAdjust+'px'
+      var scrollTop     = $(window).scrollTop();
+
+          punkOffset = $(punkSection).offset().top;
+          punkDistance = (punkOffset - scrollTop);
+          punkScrollAdjust = 0 - punkDistance / 5;
+
+          androidOffset = $(androidSection).offset().top;
+          androidDistance      = (androidOffset - scrollTop);
+          androidScrollAdjust = 0 - androidDistance / 5;
+
+      punkSection.css({
+        'background-position':punkBgHorPosition[0]+punkScrollAdjust+'px'
       });
+
+      androidSection.css({
+        'background-position':androidBgHorPosition[0]+androidScrollAdjust+'px'
+      });
+      
     });
   };
   scrollIntervalID = setInterval(updatePage, 10);
 
-
+  // video player
   $('.yt-player-autoload').each(function(){
       containerVideoID = $(this).attr('id');
       setTimeout(function(){
