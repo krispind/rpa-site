@@ -2,7 +2,7 @@ html {
   font-size: $baseFontSize + px;
   font-family: "aktiv-grotesk", Arial, sans-serif;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 1.4;
   color: $text;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -27,6 +27,7 @@ h2 {
   font-weight: 300;
   font-size: 2.5rem;
   margin: 0 0 .5em;
+  line-height: 1.25;
 }
 
 h3 {
@@ -34,6 +35,7 @@ h3 {
   font-size: 1rem;
   font-weight: 300;
   margin: 0 0 1em;
+  line-height: 1.25;
 }
 
 h4 {}
@@ -51,7 +53,7 @@ ol {
 
 li {
   margin-bottom: .75rem;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 
 #{$a-tags} { // see variables partial for definitions
